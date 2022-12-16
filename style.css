@@ -11,18 +11,18 @@
   --Light-Red: hsl(354, 100%, 66%);
   --Gray: hsl(0, 0%, 59%);
   --Very-Dark-Blue: hsl(209, 33%, 12%);
-  overflow-x:hidden ;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
-  position: relative; 
+  position: relative;
 }
 
 .container {
   max-width: 80%;
-  margin: 3% auto;  
+  margin: 3% auto;
 }
 /* position: absolute;
   left: 0;
@@ -202,12 +202,18 @@ footer {
   color: var(--Light-Red);
 }
 
-@media (max-width: 650px) {  
+@media (max-width: 650px) {
+  
   .container {
+    position: relative;
     max-width: 100%;
-    margin: 3% auto;  
-   
-    }
+    margin: 3% auto;
+    overflow-x: hidden;
+  }
+
+  .submission{
+    position: absolute;
+  }
   .desc h1 {
     font-size: 23px;
     color: var(--Gray);
@@ -239,7 +245,7 @@ footer {
   .copyright {
     font-size: 12px;
   }
-  .footer{
+  .footer {
     font-size: 12px;
     text-align: center;
   }
