@@ -11,13 +11,13 @@
   --Light-Red: hsl(354, 100%, 66%);
   --Gray: hsl(0, 0%, 59%);
   --Very-Dark-Blue: hsl(209, 33%, 12%);
+  overflow-x:hidden ;
 }
 
 body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
-  position: relative;
-  overflow-x: hidden;
+  position: relative; 
 }
 
 .container {
@@ -184,8 +184,8 @@ footer {
 }
 
 .footer {
-  margin-top: 3rem;
-  margin-bottom: -22px;
+  margin-top: 1rem;
+  padding-bottom: 20px;
   text-align: center;
 }
 
