@@ -205,8 +205,9 @@ footer {
 @media (max-width: 400px) {  
   .container {
     max-width: 100%;
-    margin: 3% auto;    
-  }
+    margin: 3% auto;  
+   
+    }
   .desc h1 {
     font-size: 23px;
     color: var(--Gray);
