@@ -17,11 +17,12 @@ body {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 80%;
-  margin: 3% auto;
+  margin: 3% auto;  
 }
 /* position: absolute;
   left: 0;
@@ -201,11 +202,10 @@ footer {
   color: var(--Light-Red);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) {  
   .container {
     max-width: 100%;
-    margin: 3% auto;
-    overflow-x: hidden;
+    margin: 3% auto;    
   }
   .desc h1 {
     font-size: 23px;
