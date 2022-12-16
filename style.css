@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  position: relative;
+}
+
+.container {
+  max-width: 80%;
+  margin: 3% auto;
+}
+/* position: absolute;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+} */
+.submission {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: max-content;
+  padding: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  z-index: 22;
+  right: -320px;
+  top: 0;
+  transition: 1s ease-in-out;
+}
+
+.submission svg {
+  width: 20px;
+  background-position: center;
+  background-size: cover;
+  max-height: 20px;
+  margin-right: 1rem;
+}
+
+.hero {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header svg {
+  margin-bottom: 50%;
+}
+
+.desc h1 {
+  font-size: 35px;
+  color: var(--Gray);
+  font-weight: 700;
+}
+
+.desc span {
+  color: black;
+  font-weight: 700;
+}
+
+.desc p {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  color: black;
+  opacity: 65%;
+  font-weight: 600;
+}
+
+.notify {
+  margin-top: 2rem;
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.notify input {
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid hsl(0, 0%, 59%, 0.5);
+  font-size: 20px;
+  flex-basis: 60%;
+  padding: 0px 20px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.notify input::placeholder {
+  opacity: 0.5;
+  padding-left: 30px;
+}
+
+.notify button {
+  display: grid;
+  place-content: center;
+  padding: 2%;
+  background-color: var(--Blue);
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid var(--Blue);
+  color: white;
+  font-size: 15px;
+}
+.notify button:hover {
+  cursor: pointer;
+  background-color: var(--Pale-Blue);
+  color: var(--Very-Dark-Blue);
+}
+
+.hero-img {
+  margin-top: 2rem;
+}
+
+.hero-img div {
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  max-width: 40.7rem;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.logo svg {
+  width: 29px;
+  height: 29px;
+  border: 1px solid hsl(0, 0%, 0%, 0.12);
+  border-radius: 100px;
+  padding: 6px;
+}
+
+.logo svg:hover {
+  background-color: var(--Pale-Blue);
+  cursor: pointer;
+}
+
+.copyright {
+  margin-top: 1rem;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  color: var(--Gray);
+}
+
+.footer {
+  margin-top: 3rem;
+  margin-bottom: -22px;
+  text-align: center;
+}
+
+.error {
+  width: 70%;
+  margin-top: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: -20px;
+}
+
+.error-message {
+  font-size: 15px;
+  color: var(--Light-Red);
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 100%;
+    margin: 3% auto;
+    overflow-x: hidden;
+  }
+  .desc h1 {
+    font-size: 23px;
+    color: var(--Gray);
+    font-weight: 300;
+  }
+  .desc p {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .notify {
+    flex-direction: column;
+  }
+  .notify input {
+    padding: 7px 20px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .notify button {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .hero-img img {
+    width: 100%;
+    margin-bottom: -20px;
+    /* background-position: center;
+    background-size: cover;
+    max-width: 40.7rem; */
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .footer{
+    font-size: 12px;
+    text-align: center;
+  }
+}
